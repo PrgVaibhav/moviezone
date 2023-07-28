@@ -1,5 +1,5 @@
 import { useSearchParams } from "react-router-dom";
-import { useFetch } from "../hooks/useFetch";
+import { useFetch, useDocumentTitle } from "../hooks";
 import { MovieCard, LoadingSpinner } from "../components";
 import styles from "../styles/movieCard.module.scss";
 import style from "../styles/searchMovie.module.scss";
@@ -7,6 +7,8 @@ export const SearchMovie = ({ apiPath }) => {
   const [searchParams] = useSearchParams();
   const query = searchParams.get("q");
   const { result: movies, isLoading } = useFetch(apiPath, query);
+
+  useDocumentTitle(`Search result for ${query}`);
 
   return (
     <main>

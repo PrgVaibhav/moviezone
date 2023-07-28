@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { BsStarFill } from "react-icons/bs";
 import { LoadingSpinner } from "../components";
+import { useDocumentTitle } from "../hooks";
 import placeholder from "../assets/p.avif";
 import styles from "../styles/movieDetail.module.scss";
 
@@ -9,6 +10,8 @@ export const MovieDetail = () => {
   const [movieDetail, setMovieDetail] = useState([]);
   const [loading, setLoading] = useState(false);
   const params = useParams();
+  useDocumentTitle(`${movieDetail.original_title} `);
+
   useEffect(() => {
     async function fetchMovieDetail() {
       setLoading(true);
@@ -40,6 +43,7 @@ export const MovieDetail = () => {
           <section className={styles.movie_detail_container}>
             <div className={styles.image_section}>
               <img src={image} alt={movieDetail.title} />
+              <span>{movieDetail.status}</span>
             </div>
             <div className={styles.content_section}>
               <h2 className={styles.movie_title}>
@@ -81,7 +85,9 @@ export const MovieDetail = () => {
                 </p>
                 <p>
                   <span className={styles.bold}>Release Date: </span>
-                  {movieDetail.release_date}
+                  {movieDetail.release_date
+                    ? movieDetail.release_date
+                    : "Not Known"}
                 </p>
                 {movieDetail.homepage && (
                   <p>

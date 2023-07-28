@@ -1,8 +1,11 @@
 import { Link } from "react-router-dom";
+import { useDocumentTitle } from "../hooks";
 import error from "../assets/404.avif";
 
 import styles from "../styles/pageNotFound.module.scss";
 export const PageNotFound = () => {
+  useDocumentTitle(`Page Not Found`);
+
   return (
     <main>
       <section className={styles.error_container}>

@@ -9,6 +9,19 @@
   min-height: 100vh;
   gap: 2rem;
 
+  animation: slideUp 0.5s ease-in-out;
+
+  @keyframes slideUp {
+    from {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
   @media screen and (max-width: 48em) {
     max-width: 100%;
     flex-direction: column;
@@ -17,10 +30,33 @@
 
   .image_section {
     flex: 3;
+    position: relative;
     img {
       width: 100%;
       height: auto;
       object-fit: cover;
+      border-radius: 10px;
+      // border: 1px solid var(--box-shadow-color);
+      box-shadow: var(--secondary-color) 0px 3px 6px,
+        var(--secondary-color) 0px 2px 6px;
+      transition: all 0.5s ease-in-out;
+
+      &:hover {
+        filter: contrast(0.8);
+      }
+    }
+
+    span {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: max-content;
+      background-color: var(--tertiary-color);
+      color: var(--text-color);
+      border-radius: 10px;
+      margin: 5px;
+      padding: 5px;
+      font-size: 0.8rem;
     }
   }
 

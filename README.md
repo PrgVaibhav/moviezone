@@ -1,70 +1,34 @@
-# Getting Started with Create React App
+# Movie Gyaaan
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Welcome to the Movie Information Website! This website provides comprehensive details about various movies, including ratings, languages, genres, revenue, budget, and release dates. Whether you're a movie enthusiast, critic, or just looking for something new to watch, this platform has got you covered.
 
-## Available Scripts
 
-In the project directory, you can run:
+## Introduction
 
-### `npm start`
+The Movie Gyaaan Website is designed to be a one-stop solution for movie-related information. It aims to provide users with accurate and up-to-date data on their favorite movies, as well as discover new and exciting titles across different genres and languages. Whether it's the latest blockbuster or a timeless classic, you'll find all the essential details here.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Movie Ratings:** Get access to critic and user ratings, providing a well-rounded view of a movie's reception.
+- **Language Information:** Discover the languages in which the movie is available, including dubbed and subtitled versions.
+- **Genres:** Explore the genres to which a movie belongs, helping you find films that match your preferences.
+- **Revenue and Budget:** Find out how well a movie performed financially, with both its revenue and budget figures.
+- **Release Date:** Stay informed about a movie's release date, so you can plan your movie-watching schedule accordingly.
 
-### `npm test`
+## Usage
+To use the Movie Gyaaan Website, simply follow these steps:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Visit the website [here](https://moviegyaaan.netlify.app/).
 
-### `npm run build`
+- Use the search bar to look for a specific movie or browse through the featured titles.
+  
+- Click on a movie's title to view detailed information, including its rating, language, genres, revenue, budget, and release date.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Data Sources
+The movie data presented on this website is collected from reputable and up-to-date sources, which is:
+This website uses TMDB API to fetch the data. The API is free to use and requires no authentication. You can find more information about the API [here](https://developers.themoviedb.org/3/getting-started/introduction).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Feedback
+We value user feedback and are committed to improving the website. If you have any suggestions, encounter any issues, or want to request a new feature, please don't hesitate to contact. You can reach us at `devFort.work@gmail.com`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Thank you for choosing the Movie Information Website! We hope you find it a valuable resource for all your movie-related inquiries. Happy movie watching!
