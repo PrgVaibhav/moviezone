@@ -6,6 +6,8 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  text-decoration: none;
+  list-style: none;
 }
 
 :root {
@@ -13,7 +15,12 @@
   --secondary-color: #C0B80B;
   --tertiary-color: #12151E;
   --text-color: #EAE3D9;
+  --box-shadow-color: #bebebe;
   --font-family: 'Poppins', sans-serif;
+}
+
+html {
+  overflow-x: hidden;
 }
 
 body {
@@ -22,6 +29,7 @@ body {
   font-family: var(--font-family);
   font-size: 1rem;
   padding: 0px 10px;
+  overflow-x: hidden;
 }
 
 button,
@@ -32,4 +40,17 @@ input {
 
 main {
   min-height: 100vh;
+}
+
+.light {
+  --primary-color: #F8F8FF;
+  --primary-color: #F9F6F7;
+  --secondary-color: #e0d500;
+  --tertiary-color: #6e768d;
+  --tertiary-color: #C9CBFF;
+  --text-color: #19212B;
+
+  background-color: var(--primary-color);
+  color: var(--text-color);
+
 }
