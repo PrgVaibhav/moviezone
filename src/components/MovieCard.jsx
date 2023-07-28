@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import placeholder from "../assets/placeholder.png";
 import styles from "../styles/movieCard.module.scss";
 
 import { RiMovieLine } from "react-icons/ri";
