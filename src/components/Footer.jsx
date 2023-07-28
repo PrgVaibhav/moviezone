@@ -8,7 +8,7 @@ export const Footer = () => {
         <p>
           © 2023{" "}
           <Link to="/" className={styles.title}>
-            MovieZone
+            Movie Gyaaan
           </Link>
         </p>
       </div>
