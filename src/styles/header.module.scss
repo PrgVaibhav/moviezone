@@ -2,6 +2,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: var(--tertiary-color);
+  padding: var(--padding);
 
   @media screen and (max-width: 62em) {
     position: relative;
@@ -94,12 +96,9 @@
       }
     }
     .right {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
       .search_box {
         position: relative;
-
+        margin-right: 0.5rem;
         input {
           padding: 5px;
           outline: none;

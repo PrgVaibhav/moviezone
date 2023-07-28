@@ -1,0 +1,13 @@
+.para {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: var(--text-color);
+  text-transform: capitalize;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: var(--padding);
+
+  .span {
+    color: var(--secondary-color);
+  }
+}

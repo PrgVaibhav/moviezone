@@ -4,6 +4,8 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
+  padding: var(--padding);
+
   .card {
     max-width: 350px;
     height: auto;

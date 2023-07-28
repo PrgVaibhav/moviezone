@@ -14,9 +14,11 @@
   --primary-color: #19212B;
   --secondary-color: #C0B80B;
   --tertiary-color: #12151E;
-  --text-color: #EAE3D9;
+  --text-color: #bebebe;
   --box-shadow-color: #bebebe;
   --font-family: 'Poppins', sans-serif;
+  --padding: 0 10px;
+  --padding-footer: 5px 10px;
 }
 
 html {
@@ -28,7 +30,6 @@ body {
   color: var(--text-color);
   font-family: var(--font-family);
   font-size: 1rem;
-  padding: 0px 10px;
   overflow-x: hidden;
 }
 
@@ -43,11 +44,10 @@ main {
 }
 
 .light {
-  --primary-color: #F8F8FF;
   --primary-color: #F9F6F7;
   --secondary-color: #e0d500;
-  --tertiary-color: #6e768d;
   --tertiary-color: #C9CBFF;
+  --tertiary-color: #e7e8fc;
   --text-color: #19212B;
 
   background-color: var(--primary-color);

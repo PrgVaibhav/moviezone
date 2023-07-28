@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import { AiOutlineSearch, AiOutlineClose } from "react-icons/ai";
 import { BsMoonStars, BsSun } from "react-icons/bs";
 import { RiMenu3Line } from "react-icons/ri";
@@ -10,6 +10,7 @@ export const Header = () => {
     JSON.parse(localStorage.getItem("theme")) || false
   );
   const [open, setOpen] = useState(true);
+  const navigate = useNavigate();
   useEffect(() => {
     localStorage.setItem("theme", JSON.stringify(theme));
 
@@ -19,6 +20,18 @@ export const Header = () => {
       document.documentElement.classList.remove("light");
     }
   }, [theme]);
+
+  const submitHandler = (e) => {
+    e.preventDefault();
+
+    if (e.target.search.value === "")
+      return alert("Enter movie name to search");
+
+    const query = e.target.search.value;
+    e.target.reset();
+
+    return navigate(`/search?q=${query}`);
+  };
   return (
     <header className={styles.header}>
       <div className={styles.left}>
@@ -93,8 +106,15 @@ export const Header = () => {
         </div>
         <div className={styles.right}>
           <div className={styles.search_box}>
-            <input type="text" placeholder="Search" />
-            <AiOutlineSearch className={styles.search_icon} />
+            <form onSubmit={submitHandler}>
+              <input
+                type="text"
+                placeholder="Search"
+                autoComplete="off"
+                name="search"
+              />
+              <AiOutlineSearch className={styles.search_icon} />
+            </form>
           </div>
         </div>
       </nav>
