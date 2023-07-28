@@ -4,11 +4,11 @@ import { useFetch } from "../hooks/useFetch";
 import { LoadingSpinner } from "../components";
 
 export const MovieList = ({ apiPath }) => {
-  const { result: movies, loading } = useFetch(apiPath);
+  const { result: movies, isLoading } = useFetch(apiPath);
 
   return (
     <main>
-      {loading ? (
+      {isLoading ? (
         <LoadingSpinner />
       ) : (
         <section className={styles.cards}>
