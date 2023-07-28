@@ -19,9 +19,9 @@ export const Footer = () => {
               href="https://kumarvaibhav.vercel.app/"
               rel="noreferrer"
               target="_blank"
-              aria-label="Instagram"
+              aria-label="Portfolio"
             >
-              Instagram
+              Portfolio
             </a>
             <GoArrowUpRight className={styles.footer_icon} />
           </li>
@@ -30,9 +30,9 @@ export const Footer = () => {
               href="https://github.com/PrgVaibhav"
               target="_blank"
               rel="noreferrer"
-              aria-label="Twitter"
+              aria-label="GitHub"
             >
-              Twitter
+              GitHub
             </a>
             <GoArrowUpRight className={styles.footer_icon} />
           </li>
