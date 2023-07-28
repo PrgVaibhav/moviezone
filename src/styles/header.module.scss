@@ -4,6 +4,7 @@
   align-items: center;
   background-color: var(--tertiary-color);
   padding: var(--padding);
+  z-index: 999;
 
   @media screen and (max-width: 62em) {
     position: relative;
